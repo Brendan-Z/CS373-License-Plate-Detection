@@ -1,7 +1,40 @@
-# 2022_S1_CS373_AssignmentSkeleton
+# CS373 Assignment
 
-This repository provides a Python 3 code skeleton for the image processing assignment of CompSci 373 in Semester 1, 2022.
+## About
 
-This assignment will require you to use what we have studied in the image processing lectures to generate a software that detects license plates in images of cars - a technology that is used routinely for example on toll roads for automatic toll pricing.
+This is a image processing assignment for the course [COMSCI 373](https://courseoutline.auckland.ac.nz/dco/course/COMPSCI/373). The aim of this project is to detect the bounding box around the license plate in an
+image of a car. The project also includes an extension script which aims to further extract the characters of the license plate using an OCR algorithm.
 
-You will receive 10 marks for solving the license plate detection problem, and there will be an additional component for 5 marks, where you will extend upon the license plate detection, and write a short reflective report about your extension.
+Install requirements:
+
+```bash
+> pip install -r requirements.txt
+```
+
+Run the main program:
+
+```bash
+> python CS373LicensePlateDetection.py <image_file>.png
+```
+
+Run the extension program:
+
+```bash
+> python CS373_extension.py <image_file>.png
+```
+
+Run on all images with the run script:
+
+```bash
+> python run.py
+```
+
+```bash
+> python run.py -extension
+```
+## Technologies
+
+- [matplotlib](https://github.com/matplotlib/matplotlib) for plotting output.
+- [numpy](https://github.com/numpy/numpy) for numerical computation.
+- [opencv](https://github.com/opencv/opencv-python) for image processing.
+- [easy-ocr](https://github.com/JaidedAI/EasyOCR) english OCR algorithm.
